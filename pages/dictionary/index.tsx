@@ -1,7 +1,7 @@
 import { NextPage } from "next";
 import Head from "next/head";
 import React from "react";
-import DictionarySearch from "./DictionarySearch";
+import DictionarySearch from "../../components/DictionarySearch";
 import Footer from "../../components/Footer";
 import Nav from "../../components/Nav";
 import styles from "../../styles/Home.module.css";

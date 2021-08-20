@@ -2,7 +2,7 @@ import { NextPage } from "next";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import styles from "../../styles/Home.module.css";
-import { getArticle } from "./data";
+import { getArticle } from "../../components/data";
 import React from "react";
 import Footer from "../../components/Footer";
 import Nav from "../../components/Nav";

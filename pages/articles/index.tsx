@@ -6,8 +6,8 @@ import React from "react";
 import Footer from "../../components/Footer";
 import Nav from "../../components/Nav";
 import styles from "../../styles/Home.module.css";
-import { paramSingle } from "../utils/urlHelper";
-import { getArticles } from "./data";
+import { paramSingle } from "../../utils/urlHelper";
+import { getArticles } from "../../components/data";
 
 const Articles: NextPage = () => {
   const router = useRouter();

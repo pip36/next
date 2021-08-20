@@ -1,4 +1,4 @@
-import { paramSingle } from "../../pages/utils/urlHelper";
+import { paramSingle } from "../../utils/urlHelper";
 
 describe("urlHelper", () => {
   describe("paramSingle() - Casts param to single element", () => {
