@@ -1,8 +1,10 @@
 import { NextPage } from "next";
 import Head from "next/head";
+import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
 import Footer from "../../components/Footer";
+import Nav from "../../components/Nav";
 import styles from "../../styles/Home.module.css";
 import { paramSingle } from "../utils/urlHelper";
 import { getArticles } from "./data";
@@ -20,10 +22,17 @@ const Articles: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
+        <Nav />
         <h1 className={styles.title}>Articles</h1>
-        {getArticles({ name: paramSingle(name) }).map(({ name, id }) => (
-          <h2 key={id}>{name}</h2>
-        ))}
+        <ul>
+          {getArticles({ name: paramSingle(name) }).map(({ name, id }) => (
+            <Link key={id} href={`/articles/${id}`}>
+              <a>
+                <li>{name}</li>
+              </a>
+            </Link>
+          ))}
+        </ul>
       </main>
 
       <Footer />

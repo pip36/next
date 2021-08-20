@@ -5,6 +5,7 @@ import styles from "../../styles/Home.module.css";
 import { getArticle } from "./data";
 import React from "react";
 import Footer from "../../components/Footer";
+import Nav from "../../components/Nav";
 
 const Article: NextPage = () => {
   const router = useRouter();
@@ -20,6 +21,7 @@ const Article: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
+        <Nav />
         {article && <h1 className={styles.title}>{article.name}</h1>}
       </main>
 

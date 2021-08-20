@@ -2,6 +2,7 @@ import { NextPage } from "next";
 import Head from "next/head";
 import React from "react";
 import Footer from "../components/Footer";
+import Nav from "../components/Nav";
 import styles from "../styles/Home.module.css";
 
 const About: NextPage = () => {
@@ -14,6 +15,7 @@ const About: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
+        <Nav />
         <h1 className={styles.title}>About</h1>
       </main>
 
