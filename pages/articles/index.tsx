@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import React from "react";
 import Footer from "../../components/Footer";
 import styles from "../../styles/Home.module.css";
-import { paramSingle } from "../utils/url_helper";
+import { paramSingle } from "../utils/urlHelper";
 import { getArticles } from "./data";
 
 const Articles: NextPage = () => {
