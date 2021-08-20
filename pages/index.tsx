@@ -27,7 +27,6 @@ const Home: NextPage = () => {
 
         <div className={styles.grid}>
           <h2>Home</h2>
-          <p>Home</p>
         </div>
       </main>
 
